@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Decorations by Thembisile | Professional Balloon Styling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --rose-gold: #e0bfb8;
+            --blush-pink: #f3e1dd;
+            --cream-white: #f9f5f0;
+            --warm-mocha: #d4b8a6;
+            --midnight-plum: #3a2e3d;
+            --gold-accent: #d4af37;
+            --deep-plum: #2d232f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--midnight-plum);
+            line-height: 1.6;
+            background-color: var(--cream-white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 2.8rem;
+            color: var(--midnight-plum);
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--rose-gold), var(--gold-accent));
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background-color: var(--rose-gold);
+            color: var(--midnight-plum);
+            border: 2px solid var(--rose-gold);
+            box-shadow: 0 5px 15px rgba(224, 191, 184, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--rose-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(224, 191, 184, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--cream-white);
+            border: 2px solid var(--cream-white);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--cream-white);
+            color: var(--midnight-plum);
+            transform: translateY(-3px);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            transition: all 0.4s ease;
+            background-color: transparent;
+        }
+
+        .header-scrolled {
+            background-color: rgba(58, 46, 61, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--cream-white);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--rose-gold);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: var(--cream-white);
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--rose-gold);
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--cream-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            background: linear-gradient(rgba(58, 46, 61, 0.6), rgba(58, 46, 61, 0.6)), url('https://i.postimg.cc/LXX62TbK/header1.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--cream-white);
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--cream-white);
+            position: relative;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 50px;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--midnight-plum);
+        }
+
+        .about-text p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            height: 550px;
+            background: url('https://i.postimg.cc/j2SNVPzj/About.jpg') no-repeat center center/cover;
+            background-color: var(--blush-pink);
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .about-image:before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid var(--rose-gold);
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--blush-pink);
+            position: relative;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: var(--cream-white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-image {
+            height: 280px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: var(--cream-white);
+            position: relative;
+        }
+
+        .service-image:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 0%, rgba(58, 46, 61, 0.05) 100%);
+        }
+
+        .service-content {
+            padding: 30px;
+        }
+
+        .service-content h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--midnight-plum);
+        }
+
+        .service-content p {
+            margin-bottom: 20px;
+        }
+
+        .service-price {
+            font-weight: 700;
+            color: var(--rose-gold);
+            font-size: 1.3rem;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .special-offer {
+            background-color: var(--rose-gold);
+            color: var(--midnight-plum);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .special-offer h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .special-offer p {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--cream-white);
+            position: relative;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 350px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-color: var(--blush-pink);
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(58, 46, 61, 0.9), transparent);
+            color: var(--cream-white);
+            padding: 25px;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--warm-mocha);
+            position: relative;
+        }
+
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background: var(--cream-white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-card:before {
+            content: '\201C';
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            color: var(--rose-gold);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .testimonial-content {
+            margin-bottom: 25px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid var(--rose-gold);
+        }
+
+        .author-info h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--rose-gold);
+            font-weight: 600;
+        }
+
+        /* Booking Section */
+        .booking {
+            background-color: var(--cream-white);
+            position: relative;
+        }
+
+        .booking-container {
+            display: flex;
+            flex-wrap: wrap;
+            background: var(--blush-pink);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-image {
+            flex: 1;
+            min-width: 300px;
+            height: 600px;
+            background: url('https://i.postimg.cc/Gh93Zqsy/g6.jpg') no-repeat center center/cover;
+            background-color: var(--cream-white);
+            position: relative;
+        }
+
+        .booking-form {
+            flex: 1;
+            min-width: 300px;
+            padding: 60px;
+        }
+
+        .booking-form h2 {
+            font-size: 2.3rem;
+            margin-bottom: 40px;
+            color: var(--midnight-plum);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: var(--midnight-plum);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: var(--cream-white);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--rose-gold);
+            box-shadow: 0 0 0 3px rgba(224, 191, 184, 0.2);
+        }
+
+        .submit-btn {
+            background-color: var(--rose-gold);
+            color: var(--midnight-plum);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(224, 191, 184, 0.3);
+        }
+
+        .submit-btn:hover {
+            background-color: var(--midnight-plum);
+            color: var(--cream-white);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(58, 46, 61, 0.3);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--midnight-plum);
+            color: var(--cream-white);
+            position: relative;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.3rem;
+            margin-bottom: 40px;
+            color: var(--cream-white);
+        }
+
+        .contact-details {
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            font-size: 1.3rem;
+            color: var(--rose-gold);
+            margin-right: 20px;
+            margin-top: 5px;
+            width: 25px;
+            text-align: center;
+        }
+
+        .contact-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .contact-text p {
+            font-size: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--cream-white);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--rose-gold);
+            color: var(--midnight-plum);
+            transform: translateY(-3px);
+        }
+
+        .contact-map {
+            flex: 1;
+            min-width: 300px;
+            height: 450px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--deep-plum);
+            color: var(--cream-white);
+            padding: 50px 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--cream-white);
+            text-decoration: none;
+            margin-bottom: 25px;
+        }
+
+        .footer-logo span {
+            color: var(--rose-gold);
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-links li {
+            margin: 0 20px;
+        }
+
+        .footer-links a {
+            color: var(--cream-white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover {
+            color: var(--rose-gold);
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        /* Booking Confirmation */
+        .booking-confirmation {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            background-color: var(--cream-white);
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .confirmation-icon {
+            font-size: 5rem;
+            color: var(--rose-gold);
+            margin-bottom: 25px;
+        }
+
+        /* Form Validation Styles */
+        .form-control.invalid {
+            border-color: #ff6b6b;
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            font-size: 0.85rem;
+            margin-top: 8px;
+            display: none;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+
+            .booking-form {
+                padding: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: var(--midnight-plum);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: right 0.4s ease;
+                z-index: 1001;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                margin: 20px 0;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+
+            .section-title {
+                font-size: 2.3rem;
+                margin-bottom: 50px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.85rem;
+            }
+
+            .about-image, .booking-image {
+                height: 400px;
+            }
+
+            .booking-form {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <div class="logo-img" style="background-color: var(--rose-gold); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-birthday-cake" style="color: var(--midnight-plum); font-size: 1.5rem;"></i>
+                </div>
+                <a href="#" class="logo">RoomDecor<span>Thembisile</span></a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Beautiful Balloon Decorations for Every Celebration</h1>
+            <p>Transform your space with our stunning balloon arrangements for birthdays, anniversaries, and special occasions.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Book Now</a>
+                <a href="#packages" class="btn btn-secondary">Our Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Creating Magical Moments</h2>
+                    <p>At Room Decorations by Thembisile, we specialize in transforming ordinary spaces into extraordinary celebrations with our beautiful balloon decorations. We believe every special occasion deserves a magical touch.</p>
+                    <p>With years of experience in creating stunning balloon arrangements, we've perfected the art of celebration decor. From intimate birthday parties to grand anniversary celebrations, we bring your vision to life.</p>
+                    <p>Our team is passionate about creating memorable experiences through our creative designs and attention to detail. We use high-quality balloons and materials to ensure your decorations look spectacular throughout your event.</p>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="section services" id="packages">
+        <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://i.postimg.cc/qqsc04F5/g4.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Bronze Package</h3>
+                        <p>Perfect for intimate celebrations with elegant balloon arrangements.</p>
+                        <ul style="list-style: none; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;">✓ 10 Ceiling Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 10 Floor Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 2 Helium Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ Party Popper</li>
+                            <li style="margin-bottom: 8px;">✓ Age and Happy Birthday Banner</li>
+                        </ul>
+                        <span class="service-price">R500</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://i.postimg.cc/rszYgdZN/p1.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Silver Package</h3>
+                        <p>Enhanced decorations for a more festive atmosphere.</p>
+                        <ul style="list-style: none; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;">✓ 20 Ceiling Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 20 Floor Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 2 Helium Heart/Star Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ Party Popper</li>
+                            <li style="margin-bottom: 8px;">✓ Age and Happy Birthday Banner</li>
+                        </ul>
+                        <span class="service-price">R800</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://i.postimg.cc/kMF4d24n/p3.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Gold Package</h3>
+                        <p>Premium decorations for a truly special celebration.</p>
+                        <ul style="list-style: none; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;">✓ 30 Ceiling Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 30 Floor Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 4 Helium Heart/Star Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ Party Popper</li>
+                            <li style="margin-bottom: 8px;">✓ Age and Happy Birthday Banner</li>
+                        </ul>
+                        <span class="service-price">R1150</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://i.postimg.cc/BvMLstNT/p4.jpg');"></div>
+                    <div class="service-content">
+                        <h3>Platinum Package</h3>
+                        <p>The ultimate celebration package for unforgettable events.</p>
+                        <ul style="list-style: none; margin-top: 15px;">
+                            <li style="margin-bottom: 8px;">✓ 50 Ceiling Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 50 Floor Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ 6 Helium Heart/Star Balloons</li>
+                            <li style="margin-bottom: 8px;">✓ Party Popper</li>
+                            <li style="margin-bottom: 8px;">✓ Age and Happy Birthday Banner</li>
+                            <li style="margin-bottom: 8px;">✓ Candles on the Floor</li>
+                        </ul>
+                        <span class="service-price">R2300</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Updated Special Offer: removed 'December' -->
+            <div class="special-offer">
+                <h3>Special only</h3>
+                <p>Book any package for your celebration and get 10% off!</p>
+                <p>Limited slots available - book early!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/x1hQDQSV/g1.jpg" alt="Birthday balloon decoration" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Birthday Celebration</h3>
+                        <p>Beautiful balloon arrangements</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/FR1n9dbk/g2.jpg" alt="Anniversary balloon setup" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Anniversary Setup</h3>
+                        <p>Romantic balloon decor</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/5yC7ChRH/g3.jpg" alt="Special occasion balloons" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Special Occasion</h3>
+                        <p>Custom balloon designs</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/qqsc04F5/g4.jpg" alt="Party balloon decorations" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Party Decor</h3>
+                        <p>Festive atmosphere</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/LsPnGvw0/g5.jpg" alt="Balloon arch decoration" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Balloon Arch</h3>
+                        <p>Stunning entrance piece</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/Gh93Zqsy/g6.jpg" alt="Table balloon centerpieces" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Table Centerpieces</h3>
+                        <p>Elegant table decor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Stories</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>I booked the Silver package for my daughter's birthday and it was absolutely stunning! The balloons were beautifully arranged and created such a festive atmosphere. Highly recommend Room Decorations by Thembisile!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        
+                        <div class="author-info">
+                            <h4>Sarah</h4>
+                            <p>Birthday Celebration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>The Platinum package transformed our anniversary dinner into a magical experience. The candle arrangement with the balloons was so romantic. Professional service and beautiful results!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        
+                        <div class="author-info">
+                            <h4>Sfiso &amp; Bongeka</h4>
+                            <p>Anniversary Celebration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>I've used Room Decorations by Thembisile for three different events now, and each time they exceed expectations. The Gold package for my son's graduation party was perfect - everyone commented on how beautiful the decorations were.</p>
+                    </div>
+                    <div class="testimonial-author">
+                    
+                        <div class="author-info">
+                            <h4>Minenhle</h4>
+                            <p>Graduation Party</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking" id="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Celebration</h2>
+            <div class="booking-container">
+                <div class="booking-image"></div>
+                <div class="booking-form">
+                    <h2>Schedule Your Decoration</h2>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <div class="error-message" id="name-error">Please enter your name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                            <div class="error-message" id="phone-error">Please enter your phone number</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Package</label>
+                            <select id="package" name="package" class="form-control" required>
+                                <option value="">Select a package</option>
+                                <option value="Bronze (R500)">Bronze (R500)</option>
+                                <option value="Silver (R800)">Silver (R800)</option>
+                                <option value="Gold (R1150)">Gold (R1150)</option>
+                                <option value="Platinum (R2300)">Platinum (R2300)</option>
+                            </select>
+                            <div class="error-message" id="package-error">Please select a package</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="occasion">Occasion</label>
+                            <select id="occasion" name="occasion" class="form-control" required>
+                                <option value="">Select occasion</option>
+                                <option value="Birthday">Birthday</option>
+                                <option value="Anniversary">Anniversary</option>
+                                <option value="Graduation">Graduation</option>
+                                <option value="Baby Shower">Baby Shower</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="error-message" id="occasion-error">Please select an occasion</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Event Date</label>
+                            <input type="date" id="date" name="date" class="form-control" required>
+                            <div class="error-message" id="date-error">Please select a future date</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Event Location</label>
+                            <input type="text" id="location" name="location" class="form-control" placeholder="Johannesburg Area" required>
+                            <div class="error-message" id="location-error">Please enter event location</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Special Requests</label>
+                            <textarea id="notes" name="notes" class="form-control" rows="4" placeholder="Any specific colors, themes, or additional requests..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span id="btnText">Book Decoration</span>
+                            <span id="btnSpinner" style="display:none;">
+                                <i class="fas fa-spinner fa-spin"></i> Processing...
+                            </span>
+                        </button>
+                    </form>
+
+                    <div class="booking-confirmation" id="bookingConfirmation">
+                        <div class="confirmation-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Booking Request Sent!</h3>
+                        <p>We've sent your booking details via WhatsApp.</p>
+                        <p>Please check your messages to complete the booking process.</p>
+                        <button onclick="window.location.reload()" class="submit-btn" style="margin-top:20px;">
+                            <i class="fas fa-calendar-plus"></i> Make Another Booking
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (updated phone number to 0634596265) -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>063 459 6265<br>063 459 6265</p> <!-- Updated to new number -->
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>portiamlotshwa0@icloud.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Service Area</h4>
+                                <p>Johannesburg and Surrounding Areas</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Booking Notice</h4>
+                                <p>Please book at least one week in advance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <!-- Updated WhatsApp link to new number -->
+                        <a href="https://wa.me/27634596265" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143019.4113583441!2d27.90045415!3d-26.1715041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574736acb7755%3A0x3d0e5c11b8199c5d!2sJohannesburg!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (updated name) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">RoomDecor<span>Thembisile</span></a>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p class="copyright">&copy; 2023 Room Decorations by Thembisile. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ?
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form Validation Functions
+        function showError(input, errorId, message) {
+            input.classList.add('invalid');
+            const errorElement = document.getElementById(errorId);
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        function hideError(input, errorId) {
+            input.classList.remove('invalid');
+            document.getElementById(errorId).style.display = 'none';
+        }
+
+        // Real-time Validation
+        document.getElementById('name').addEventListener('input', function () {
+            if (this.value.trim()) {
+                hideError(this, 'name-error');
+            }
+        });
+
+        document.getElementById('phone').addEventListener('input', function () {
+            if (this.value.trim()) {
+                hideError(this, 'phone-error');
+            }
+        });
+
+        document.getElementById('package').addEventListener('change', function () {
+            if (this.value) {
+                hideError(this, 'package-error');
+            }
+        });
+
+        document.getElementById('occasion').addEventListener('change', function () {
+            if (this.value) {
+                hideError(this, 'occasion-error');
+            }
+        });
+
+        document.getElementById('date').addEventListener('change', function () {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const selectedDate = new Date(this.value);
+            if (selectedDate >= today) {
+                hideError(this, 'date-error');
+            }
+        });
+
+        document.getElementById('location').addEventListener('input', function () {
+            if (this.value.trim()) {
+                hideError(this, 'location-error');
+            }
+        });
+
+        // WhatsApp Booking Submission (updated number in message URL)
+        document.getElementById('bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Validate form
+            if (!validateForm()) {
+                return;
+            }
+
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnSpinner = document.getElementById('btnSpinner');
+
+            // Show loading state
+            btnText.style.display = 'none';
+            btnSpinner.style.display = 'inline';
+            submitBtn.disabled = true;
+
+            // Collect form data
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value || 'Not provided',
+                package: document.getElementById('package').value,
+                occasion: document.getElementById('occasion').value,
+                date: document.getElementById('date').value,
+                location: document.getElementById('location').value,
+                notes: document.getElementById('notes').value || 'No special requests'
+            };
+
+            // Create WhatsApp message
+            const whatsappMessage = `*New Balloon Decoration Booking Request*%0A%0A` +
+                `*Name:* ${formData.name}%0A` +
+                `*Phone:* ${formData.phone}%0A` +
+                `*Email:* ${formData.email}%0A` +
+                `*Package:* ${formData.package}%0A` +
+                `*Occasion:* ${formData.occasion}%0A` +
+                `*Date:* ${formData.date}%0A` +
+                `*Location:* ${formData.location}%0A` +
+                `*Special Requests:* ${formData.notes}`;
+
+            // Send via WhatsApp - updated to new number 0634596265
+            const whatsappUrl = `https://wa.me/27634596265?text=${whatsappMessage}`;
+
+            // Open WhatsApp in new tab
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+
+                // Show confirmation
+                document.getElementById('bookingForm').style.display = 'none';
+                document.getElementById('bookingConfirmation').style.display = 'block';
+                window.location.hash = '#bookingConfirmation';
+
+                // Reset button state
+                btnText.style.display = 'inline';
+                btnSpinner.style.display = 'none';
+                submitBtn.disabled = false;
+            }, 1000);
+        });
+
+        // Form Validation
+        function validateForm() {
+            let isValid = true;
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            // Validate name
+            const name = document.getElementById('name');
+            if (!name.value.trim()) {
+                showError(name, 'name-error', 'Please enter your name');
+                isValid = false;
+            }
+
+            // Validate phone
+            const phone = document.getElementById('phone');
+            if (!phone.value.trim()) {
+                showError(phone, 'phone-error', 'Please enter your phone number');
+                isValid = false;
+            }
+
+            // Validate package
+            const package = document.getElementById('package');
+            if (!package.value) {
+                showError(package, 'package-error', 'Please select a package');
+                isValid = false;
+            }
+
+            // Validate occasion
+            const occasion = document.getElementById('occasion');
+            if (!occasion.value) {
+                showError(occasion, 'occasion-error', 'Please select an occasion');
+                isValid = false;
+            }
+
+            // Validate date
+            const date = document.getElementById('date');
+            const selectedDate = new Date(date.value);
+            if (!date.value || selectedDate < today) {
+                showError(date, 'date-error', 'Please select a future date');
+                isValid = false;
+            }
+
+            // Validate location
+            const location = document.getElementById('location');
+            if (!location.value.trim()) {
+                showError(location, 'location-error', 'Please enter event location');
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        // Set minimum date to today for date picker
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>
